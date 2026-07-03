@@ -9,20 +9,20 @@
    ============================================================ */
 :root,
 .dark {
-  --bg: 11 18 32;
-  --surface: 15 23 42;
-  --surface-2: 19 31 56;
-  --surface-3: 27 43 77;
-  --line: 42 56 86;
-  --content: 241 245 249;
-  --content-muted: 148 163 184;
-  --content-dim: 91 107 134;
+  --bg: 6 10 20;
+  --surface: 13 19 33;
+  --surface-2: 18 26 44;
+  --surface-3: 30 42 68;
+  --line: 34 46 72;
+  --content: 240 245 252;
+  --content-muted: 143 158 181;
+  --content-dim: 96 111 138;
   --primary: 47 107 255;
   --accent: 34 197 94;
-  --cyan: 34 211 238;
+  --cyan: 56 189 248;
   --danger: 239 68 68;
   --warning: 245 158 11;
-  --primary-glow: rgba(47, 107, 255, 0.55);
+  --primary-glow: rgba(47, 107, 255, 0.5);
 }
 
 .light {
@@ -73,8 +73,8 @@ body {
 /* Ambient cyber grid + radial glow behind the whole app */
 .app-backdrop {
   background:
-    radial-gradient(900px 500px at 78% -8%, rgba(47, 107, 255, 0.18), transparent 60%),
-    radial-gradient(700px 500px at 12% 108%, rgba(34, 211, 238, 0.12), transparent 60%),
+    radial-gradient(800px 460px at 82% -12%, rgba(47, 107, 255, 0.12), transparent 62%),
+    radial-gradient(620px 460px at 6% 112%, rgba(56, 189, 248, 0.08), transparent 62%),
     rgb(var(--bg));
 }
 .app-backdrop::before {
@@ -85,10 +85,10 @@ body {
   background-image:
     linear-gradient(rgb(var(--line) / 0.6) 1px, transparent 1px),
     linear-gradient(90deg, rgb(var(--line) / 0.6) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: radial-gradient(circle at 50% 40%, black, transparent 78%);
-  -webkit-mask-image: radial-gradient(circle at 50% 40%, black, transparent 78%);
-  opacity: 0.45;
+  background-size: 46px 46px;
+  mask-image: radial-gradient(circle at 50% 35%, black, transparent 72%);
+  -webkit-mask-image: radial-gradient(circle at 50% 35%, black, transparent 72%);
+  opacity: 0.28;
 }
 
 /* Custom scrollbars */

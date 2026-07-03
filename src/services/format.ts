@@ -31,6 +31,14 @@ export function formatRelative(ts: number, lang: Language = 'VN'): string {
   return `${days}d ago`
 }
 
+/** Date only, dd/MM/yyyy. */
+export function formatDateShort(ts: number): string {
+  const d = new Date(ts)
+  const dd = String(d.getDate()).padStart(2, '0')
+  const mm = String(d.getMonth() + 1).padStart(2, '0')
+  return `${dd}/${mm}/${d.getFullYear()}`
+}
+
 /** Absolute date-time string. */
 export function formatDateTime(ts: number, lang: Language = 'VN'): string {
   return new Date(ts).toLocaleString(lang === 'VN' ? 'vi-VN' : 'en-US', {

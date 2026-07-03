@@ -2,7 +2,8 @@ export type Language = 'VN' | 'EN'
 
 export const translations = {
   VN: {
-    appName: 'CMC Antivirus',
+    appName: 'CMC EPP',
+    appTagline: 'CMC Endpoint Protection Platform',
     version: 'Phiên bản 2.2.1',
     search: 'Tìm kiếm...',
 
@@ -67,8 +68,10 @@ export const translations = {
     col_files: 'Tập tin',
     col_duration: 'Thời lượng',
     result_clean: 'An toàn',
+    result_handled: 'Đã xử lý nguy cơ',
     result_threats: 'mối đe dọa',
     empty_history: 'Chưa có lịch sử quét nào',
+    no_scan_yet: 'Chưa quét lần nào',
 
     // Config / settings pages
     system_info: 'Thông tin hệ thống',
@@ -97,7 +100,8 @@ export const translations = {
   },
 
   EN: {
-    appName: 'CMC Antivirus',
+    appName: 'CMC EPP',
+    appTagline: 'CMC Endpoint Protection Platform',
     version: 'Version 2.2.1',
     search: 'Search...',
 
@@ -156,8 +160,10 @@ export const translations = {
     col_files: 'Files',
     col_duration: 'Duration',
     result_clean: 'Clean',
+    result_handled: 'Threats handled',
     result_threats: 'threats',
     empty_history: 'No scan history yet',
+    no_scan_yet: 'No scan yet',
 
     system_info: 'System information',
     config_custom_title: 'Protection customization',

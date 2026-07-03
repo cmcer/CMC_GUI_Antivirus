@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
-import TitleBar from './components/TitleBar'
-import TopBar from './components/TopBar'
+import WindowControls from './components/WindowControls'
 import ScanningOverlay from './components/ScanningOverlay'
 import Sidebar from './modules/sidebar/Sidebar'
 import Dashboard from './modules/dashboard/Dashboard'
@@ -26,6 +25,7 @@ export default function App() {
   const theme = useAppStore((s) => s.theme)
   const appLanguage = useAppStore((s) => s.appLanguage)
   const activeNav = useAppStore((s) => s.activeNav)
+  const t = useAppStore((s) => s.t)
 
   // Sync theme class + document language with the store.
   useEffect(() => {
@@ -41,19 +41,21 @@ export default function App() {
   const Page = pages[activeNav]
 
   return (
-    <div className="app-backdrop relative flex h-screen w-screen flex-col overflow-hidden">
-      <TitleBar />
+    <div className="app-backdrop relative flex h-screen w-screen overflow-hidden">
+      <Sidebar />
 
-      <div className="flex min-h-0 flex-1">
-        <Sidebar />
+      <main className="relative flex min-w-0 flex-1 flex-col">
+        <WindowControls />
 
-        <main className="flex min-w-0 flex-1 flex-col">
-          <TopBar />
-          <div key={activeNav} className="flex-1 overflow-y-auto px-7 pb-8">
-            <Page />
-          </div>
-        </main>
-      </div>
+        <div key={activeNav} className="flex-1 overflow-y-auto px-8 pb-12 pt-1">
+          <Page />
+        </div>
+
+        {/* Version — bottom-right of the content area */}
+        <span className="pointer-events-none absolute bottom-3 right-7 text-xs font-medium text-content-dim">
+          {t('version')}
+        </span>
+      </main>
 
       <ScanningOverlay />
     </div>

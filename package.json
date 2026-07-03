@@ -37,8 +37,8 @@
     "wait-on": "^8.0.1"
   },
   "build": {
-    "appId": "vn.com.cmc.antivirus",
-    "productName": "CMC Antivirus",
+    "appId": "vn.com.cmc.epp",
+    "productName": "CMC EPP",
     "copyright": "Copyright © 2026 CMC Cyber Security",
     "directories": {
       "output": "release",
@@ -62,7 +62,7 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "CMC Antivirus"
+      "shortcutName": "CMC EPP"
     }
   }
 }
