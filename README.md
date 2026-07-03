@@ -1,6 +1,6 @@
-# CMC Antivirus — Desktop Security Dashboard
+# CMC Antivirus — Desktop Security Antivirus
 
-A native-feeling **Windows desktop antivirus dashboard** built with React + Vite + TypeScript, styled with a dark cyber-security aesthetic (deep navy, glowing shields, cyan accents), and packaged as a standalone `.exe` with Electron. Fully functional with **mock data** — the scanning engine, threat detection, and live logs are all simulated.
+A native-feeling **Windows desktop antivirus** built with React + Vite + TypeScript, styled with a dark cyber-security aesthetic (deep navy, glowing shields, cyan accents), and packaged as a standalone `.exe` with Electron. Fully functional with **mock data** — the scanning engine, threat detection, and live logs are all simulated.
 
 ![status](https://img.shields.io/badge/version-2.2.1-2f6bff) ![stack](https://img.shields.io/badge/React-Vite-TypeScript-22d3ee) ![desktop](https://img.shields.io/badge/Electron-Windows-22c55e)
 
